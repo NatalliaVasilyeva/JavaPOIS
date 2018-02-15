@@ -5,10 +5,10 @@ public class Lab02_1{
 
 public static void main (String[] args) {
 	
-	System.out.println("РРЅС‚РµСЂР°РєС‚РёРІРЅРѕРµ РїСЂРёР»РѕР¶РµРЅРёРµ, Р·Р°РїСЂР°С€РёРІР°СЋС‰РµРµ РёРЅС„РѕСЂРјР°С†РёСЋ");
-	System.out.println("Рѕ С‡РµР»РѕРІРµРєРµ: РµРіРѕ РёРјРµРЅРё, РґРЅРµ СЂРѕР¶РґРµРЅРёСЏ, РјРµСЃС‚Рµ СЂР°Р±РѕС‚С‹");
-	System.out.println("РґРѕР»Р¶РЅРѕСЃС‚Рё, СЃРµРјРµР№РЅРѕРј РїРѕР»РѕР¶РµРЅРёРё Рё РґРµС‚СЏС…");
-	System.out.println("Р° С‚Р°РєР¶Рµ Рѕ С…РѕР±Р±Рё Рё СѓРІР»РµС‡РµРЅРёСЏС…, Р»СЋР±РёРјРѕРј Р°С„РѕСЂРёР·РјРµ РёР»Рё С†РёС‚Р°С‚Рµ");
+	System.out.println("Интерактивное приложение, запрашивающее информацию");
+	System.out.println("о человеке: его имени, дне рождения, месте работы");
+	System.out.println("должности, семейном положении и детях");
+	System.out.println("а также о хобби и увлечениях, любимом афоризме или цитате");
 	System.out.println("");
 	System.out.println("================================================================");
 	System.out.println("");
@@ -37,9 +37,10 @@ public static void main (String[] args) {
 	System.out.println("Input your marital status");
 	maritalStatus = scanner.nextLine();
 	
+	
 	System.out.println("How much children do have?");
 	children = sc.nextInt();
-		
+	
 	System.out.println("What is your hobbies?");
 	hobby = scanner.nextLine();
 	System.out.println("What is your favorite aphorism?");
@@ -60,3 +61,16 @@ public static void main (String[] args) {
     System.out.println("===============================================================");
 }
 }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

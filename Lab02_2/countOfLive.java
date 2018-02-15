@@ -1,3 +1,4 @@
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -37,6 +38,7 @@ public class countOfLive {
                 System.out.println("Your life in minute is " + substractionOfDate/1000/60);
                 System.out.println("Your life in hour is " + substractionOfDate/1000/60/60);
                 System.out.println("Your life in day is " + substractionOfDate/1000/60/60/24);
+		System.out.println("Your life in month is " + substractionOfDate/1000/60/60/24/12);	
                 System.out.println("Your life in years is " + substractionOfDate/1000/60/60/24/365);
 		}
 		catch (ParseException e) 

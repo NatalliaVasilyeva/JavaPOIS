@@ -3,7 +3,7 @@
  * The application will generate a random number, depending on the value of which the screen displays one of the pseudographic faces,
  * which will display the mood of the user
  */
-package lab5.lab5_2;
+package com.bsu.VasilyevaN.lab5_2;
 /**
  *
  * @author Natallia Vasilyeva
@@ -23,7 +23,6 @@ public class MoodSensor {
             case 2: return  '\u2639';
             case 3: return  '\u26F9';
             case 4: return  '\uDE08';
-            case 5: return  '\uDE1B';
             default: return '\u26C4';
          
         }

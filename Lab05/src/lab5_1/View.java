@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lab5.lab5_1;
+package com.bsu.VasilyevaN.lab5_1;
 
 /**
  *

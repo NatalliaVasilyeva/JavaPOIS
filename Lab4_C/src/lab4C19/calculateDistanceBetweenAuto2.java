@@ -6,12 +6,12 @@ package lab4C.lab4C19;
 
 /**
  *
- * @author Natallia Vasilyeva
- * BSU, group 1709v1, 08.03.18
+ * @author Natallia Vasilyeva BSU, group 1709v1, 08.03.18
  */
 public class calculateDistanceBetweenAuto2 {
-    public static double findDistance2 (double v1, double v2, double s, double t) {
-       return s+((v1+v2)*t);
-       
+
+    public static double findDistance2(double v1, double v2, double s, double t) {
+        return s + ((v1 + v2) * t);
+
     }
 }

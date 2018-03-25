@@ -10,15 +10,15 @@ package lab4;
  * @author Natali
  */
 public class lab4A12 {
-     public static void main(String[] args) {
-         
-       int a = 1234;
-      
-       
-       boolean result = Logik.checkIsRiseNumberInBigNumber(a);
-       
-       System.out.println("a= "+ a);
-       System.out.println ("result: "+ result);
-               
+
+    public static void main(String[] args) {
+
+        int a = 1234;
+
+        boolean result = Logik.checkIsRiseNumberInBigNumber(a);
+
+        System.out.println("a= " + a);
+        System.out.println("result: " + result);
+
     }
 }

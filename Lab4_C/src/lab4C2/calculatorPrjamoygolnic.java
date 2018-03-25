@@ -5,16 +5,17 @@ package lab4C.lab4C2;
 
 /**
  *
- * @author Natallia Vasilyeva
- * BSU, group 1709v1, 08.03.18
+ * @author Natallia Vasilyeva BSU, group 1709v1, 08.03.18
  */
 public class calculatorPrjamoygolnic {
+
     public static double calculatePerimetrPrjam(double a, double b) {
-        return a*2+b*2;
-     
+        return a * 2 + b * 2;
+
     }
-     public static double calculateSquarePrjam(double a, double b) {
-        return a*b;
-     
+
+    public static double calculateSquarePrjam(double a, double b) {
+        return a * b;
+
     }
 }

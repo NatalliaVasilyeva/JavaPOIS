@@ -7,13 +7,12 @@ package lab4C.lab4C17;
 
 /**
  *
- * @author Natallia Vasilyeva
- * BSU, group 1709v1, 08.03.18
+ * @author Natallia Vasilyeva BSU, group 1709v1, 08.03.18
  */
-
 public class calculateDistance {
-    public static double findDistances (double t1, double t2, double v, double u) {
-        
-       return t1/(v+u)+t2/(v-u);
-           }
+
+    public static double findDistances(double t1, double t2, double v, double u) {
+
+        return t1 / (v + u) + t2 / (v - u);
+    }
 }

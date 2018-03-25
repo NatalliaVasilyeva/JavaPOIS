@@ -12,15 +12,16 @@ import lab4C.lab4C14.convertDegree;
  * @author Natali
  */
 public class lab4C15 {
+
     public static void main(String[] args) {
-    double a = 158.1;
-    double b = 259.9;
-    
-    double dollar = convertCurrency.convertEuroToDollar(a);
-    double euro = convertCurrency.convertDollarToEuro(b);
-    
-    System.out.println("The " + a + " euro is " + dollar + " dollars");
-    System.out.println("The " + b + " dollars is " + euro + " euros");
-        
+        double a = 158.1;
+        double b = 259.9;
+
+        double dollar = convertCurrency.convertEuroToDollar(a);
+        double euro = convertCurrency.convertDollarToEuro(b);
+
+        System.out.println("The " + a + " euro is " + dollar + " dollars");
+        System.out.println("The " + b + " dollars is " + euro + " euros");
+
     }
 }

@@ -10,13 +10,14 @@ package lab4B.lab4B6;
  * @author Natali
  */
 public class lab4B6 {
+
     public static void main(String[] args) {
         int number = 1565;
-        
+
         int sredneeArifm = calculateSrednee.getSredneeArifm(number);
         System.out.println("Srednee ariphmeticheskoe = " + sredneeArifm);
         double sredneeGeometr = calculateSrednee.getSredneeGoometr(number);
         System.out.println("Srednee geometricheskoe = " + sredneeGeometr);
-        
+
     }
 }

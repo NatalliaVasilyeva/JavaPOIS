@@ -10,16 +10,16 @@ package lab4;
  * @author Natali
  */
 public class lab4A18 {
+
     public static void main(String[] args) {
-         
-       double a = 3.;
-       double b = 4.;
-       double c = 5.;
-      
-       
-       boolean result = Logik.checkTriangleIs90Deg(a,b,c);
-       
-       System.out.println("a= "+ a + "; b= " + b + "; c= "+ c);
-       System.out.println ("result: "+ result);         
+
+        double a = 3.;
+        double b = 4.;
+        double c = 5.;
+
+        boolean result = Logik.checkTriangleIs90Deg(a, b, c);
+
+        System.out.println("a= " + a + "; b= " + b + "; c= " + c);
+        System.out.println("result: " + result);
     }
 }

@@ -9,23 +9,23 @@ import java.util.Random;
 
 /**
  *
- * @author Natallia Vasilyeva
- * BSU, group 1709v1, 09.03.18
+ * @author Natallia Vasilyeva BSU, group 1709v1, 09.03.18
  */
 public class lab5_3 {
+
     public static void main(String[] args) {
-        
-       View.previewShow();
-      
-       Random rn1 = new Random();
-    
-      int dice1 = rn1.nextInt(6)+1;
-      int dice2 = rn1.nextInt(6)+1;
-      int sum = diceLogic.Counting(dice1, dice2);
-      
-      View.showBonesOne(dice1);
-      View.showBonesTwo(dice2);
-      
-      View.showSum(sum);
+
+        View.previewShow();
+
+        Random rn1 = new Random();
+
+        int dice1 = rn1.nextInt(6) + 1;
+        int dice2 = rn1.nextInt(6) + 1;
+        int sum = diceLogic.Counting(dice1, dice2);
+
+        View.showBonesOne(dice1);
+        View.showBonesTwo(dice2);
+
+        View.showSum(sum);
     }
 }

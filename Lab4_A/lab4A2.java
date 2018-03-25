@@ -10,17 +10,17 @@ package lab4;
  * @author Natali
  */
 public class lab4A2 {
-     public static void main(String[] args) {
-         
-       double a = 5.8;
-       double b = 5.1;
-       double c = 16.2;
-       
-       boolean result = Logik.checkSameNumber(a, b, c);
-       System.out.println("a= "+ a + "; b= " + b + "; c= "+ c);
-       System.out.println ("result: "+ result);
-               
-         
+
+    public static void main(String[] args) {
+
+        double a = 5.8;
+        double b = 5.1;
+        double c = 16.2;
+
+        boolean result = Logik.checkSameNumber(a, b, c);
+        System.out.println("a= " + a + "; b= " + b + "; c= " + c);
+        System.out.println("result: " + result);
+
     }
-    
+
 }

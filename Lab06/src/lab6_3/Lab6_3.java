@@ -7,16 +7,13 @@ package com.bsu.VasilyevaN.lab6_3;
 
 /**
  *
- * @author Natallia Vasilyeva
- * BSU, group 1709v1, 24.03.18
+ * @author Natallia Vasilyeva BSU, group 1709v1, 24.03.18
  */
 public class Lab6_3 {
+
     public static void main(String[] args) {
-       int number =  UserInput.input("Input a number");
-       View.print("The reverse number is " + ReverceNumber.findReverceNumber(number));
-       
-     
-      
-      
+        int number = UserInput.input("Input a number");
+        View.print("The reverse number is " + ReverceNumber.findReverceNumber(number));
+
     }
 }

@@ -10,7 +10,8 @@ package com.bsu.VasilyevaN.lab5_2;
  * @author Natali
  */
 public class View {
-    public static void print (String msg) {
+
+    public static void print(String msg) {
         System.out.println(msg);
     }
 }

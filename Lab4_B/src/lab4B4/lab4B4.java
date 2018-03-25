@@ -10,12 +10,13 @@ package lab4B.lab4B4;
  * @author Natali
  */
 public class lab4B4 {
+
     public static void main(String[] args) {
         int second = 35641;
-        
+
         int minute = calculateTime.calculateMinute(second);
         int hour = calculateTime.calculateHour(second);
-        
-        System.out.println(second + " seconds "+ "is " + minute + " minutes " + " or " + hour + " hours");
+
+        System.out.println(second + " seconds " + "is " + minute + " minutes " + " or " + hour + " hours");
     }
 }

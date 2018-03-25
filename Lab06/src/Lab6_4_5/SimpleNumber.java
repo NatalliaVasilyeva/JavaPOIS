@@ -10,21 +10,24 @@ package com.bsu.VasilyevaN.Lab6_4_5;
  * @author Natali
  */
 public class SimpleNumber {
+
     public static boolean isSimpleNumber(long number) {
-        
-        boolean answer=false;
-        if (number < 2) answer= false;
-        
-        for (int i=2; i<number; i++) {
-        
-        if (number%i != 0) {
-	      answer = true;
-           	    }
-           else {answer = false; break;
-      	}
-        
-       
+
+        boolean answer = false;
+        if (number < 2) {
+            answer = false;
+        }
+
+        for (int i = 2; i < number; i++) {
+
+            if (number % i != 0) {
+                answer = true;
+            } else {
+                answer = false;
+                break;
+            }
+
+        }
+        return answer;
     }
-         return answer;
-}
 }

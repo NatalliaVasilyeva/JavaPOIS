@@ -10,12 +10,13 @@ package lab4B.lab4B7;
  * @author Natali
  */
 public class lab4B7 {
+
     public static void main(String[] args) {
         int number = 2568;
-        
+
         int newNumber = reverceNumber.getBackSideNumber(number);
-        
-        System.out.println("Sourse number is " + number );
-        System.out.println("Reverce number is " + newNumber );
+
+        System.out.println("Sourse number is " + number);
+        System.out.println("Reverce number is " + newNumber);
     }
-    }
+}

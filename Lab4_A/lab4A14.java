@@ -10,16 +10,16 @@ package lab4;
  * @author Natali
  */
 public class lab4A14 {
+
     public static void main(String[] args) {
-         
-       double a = -5.1;
-       double c = 3.2;
-      
-       
-       boolean result = Logik.checkIsPointInFirstQuarter(a, c);
-       
-       System.out.println("a= "+ a + "; c= " + c);
-       System.out.println ("result: "+ result);
-               
+
+        double a = -5.1;
+        double c = 3.2;
+
+        boolean result = Logik.checkIsPointInFirstQuarter(a, c);
+
+        System.out.println("a= " + a + "; c= " + c);
+        System.out.println("result: " + result);
+
     }
 }

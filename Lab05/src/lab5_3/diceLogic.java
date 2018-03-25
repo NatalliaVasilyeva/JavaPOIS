@@ -9,17 +9,13 @@ package com.bsu.VasilyevaN.lab5_3;
  *
  * @author Natali
  */
-
-
-
 public class diceLogic {
-     
-    public static int Counting (int dice1, int dice2) {
-   
-    
-    int sum = dice1+dice2;
-    
-    return sum;
-    
-    } 
+
+    public static int Counting(int dice1, int dice2) {
+
+        int sum = dice1 + dice2;
+
+        return sum;
+
+    }
 }

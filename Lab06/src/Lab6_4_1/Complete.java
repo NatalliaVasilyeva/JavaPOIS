@@ -4,13 +4,16 @@
  * and open the template in the editor.
  */
 package com.bsu.VasilyevaN.Lab6_4_1;
+
 import java.util.Scanner;
+
 /**
  *
  * @author Natali
  */
 public class Complete {
-    public static boolean complete (String quation) {
+
+    public static boolean complete(String quation) {
         System.out.println(quation + "YES or NO?");
         Scanner scanner = new Scanner(System.in);
         String answer = scanner.next().toLowerCase();

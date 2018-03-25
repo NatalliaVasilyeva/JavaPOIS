@@ -10,11 +10,12 @@ package com.bsu.VasilyevaN.Lab6_4_4;
  * @author Natali
  */
 public class View {
-    public static void print (String msg) {
+
+    public static void print(String msg) {
         System.out.println(msg);
     }
-    
-    public static void printWithoutNextLine (String msg) {
+
+    public static void printWithoutNextLine(String msg) {
         System.out.print(msg);
-      }
+    }
 }

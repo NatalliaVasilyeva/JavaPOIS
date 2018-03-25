@@ -10,19 +10,18 @@ package com.bsu.VasilyevaN.lab6_3;
  * @author Natali
  */
 public class ReverceNumber {
-    public static int findReverceNumber (int number) {
-         
-         int x = 0;
-         int numberR=0;
-         while(number>0) {
-          x = number%10;
-          numberR=x+numberR*10;
-             number/=10;
-          
-     }
+
+    public static int findReverceNumber(int number) {
+
+        int x = 0;
+        int numberR = 0;
+        while (number > 0) {
+            x = number % 10;
+            numberR = x + numberR * 10;
+            number /= 10;
+
+        }
         return numberR;
-     }
-    
-         
+    }
 
 }

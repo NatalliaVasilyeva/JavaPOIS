@@ -6,20 +6,17 @@ package lab4C.lab4C8;
 
 /**
  *
- * @author Natallia Vasilyeva
- * BSU, group 1709v1, 08.03.18
+ * @author Natallia Vasilyeva BSU, group 1709v1, 08.03.18
  */
-
 public class calculateRingBetweenTwoCircle {
-    
-    final static double PI  = 3.141593;
-    
+
+    final static double PI = 3.141593;
+
     public static double findSquare(double a, double b) {
-        double s1 = PI*a*a;
-        double s2 = PI*b*b;
-        
-        return s1-s2;
-       
-        
+        double s1 = PI * a * a;
+        double s2 = PI * b * b;
+
+        return s1 - s2;
+
     }
 }

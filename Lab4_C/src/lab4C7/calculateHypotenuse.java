@@ -6,16 +6,15 @@ package lab4C.lab4C7;
 
 /**
  *
- * @author Natallia Vasilyeva
- * BSU, group 1709v1, 08.03.18
+ * @author Natallia Vasilyeva BSU, group 1709v1, 08.03.18
  */
 public class calculateHypotenuse {
-    
+
     public static double findHypotenuse(double a, double b) {
-        return Math.sqrt(a*a+b*b);
-          }
-    
+        return Math.sqrt(a * a + b * b);
+    }
+
     public static double findPerimetr(double a, double b) {
-        return a+b+ findHypotenuse(a,b);
-          }
+        return a + b + findHypotenuse(a, b);
+    }
 }

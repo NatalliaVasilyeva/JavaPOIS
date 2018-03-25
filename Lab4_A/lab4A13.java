@@ -10,15 +10,15 @@ package lab4;
  * @author Natali
  */
 public class lab4A13 {
-     public static void main(String[] args) {
-         
-       int a = 2113;
-      
-       
-       boolean result = Logik.checkIsSameReadingInBothSide(a);
-       
-       System.out.println("a= "+ a);
-       System.out.println ("result: "+ result);
-               
+
+    public static void main(String[] args) {
+
+        int a = 2113;
+
+        boolean result = Logik.checkIsSameReadingInBothSide(a);
+
+        System.out.println("a= " + a);
+        System.out.println("result: " + result);
+
     }
 }

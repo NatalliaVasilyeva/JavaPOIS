@@ -12,11 +12,12 @@ import java.util.Scanner;
  * @author Natali
  */
 public class UserInput {
-         private static Scanner scanner = new Scanner(System.in);
-      
+
+    private static Scanner scanner = new Scanner(System.in);
+
     public static long input(String msg) {
         System.out.println(msg);
-       return scanner.nextLong();
-       
+        return scanner.nextLong();
+
     }
 }

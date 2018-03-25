@@ -7,18 +7,16 @@ package com.bsu.VasilyevaN.lab5_2;
 
 /**
  *
- * @author Natallia Vasilyeva
- * BSU, group 1709v1, 09.03.18
+ * @author Natallia Vasilyeva BSU, group 1709v1, 09.03.18
  */
 public class lab5_2 {
-     public static void main(String[] args) {
-        
-       View.print("The programm view your mood");
-       
-     
-        
-      char b = MoodSensor.getSmile();
-        
-       View.print("Your mood is  " + b);
+
+    public static void main(String[] args) {
+
+        View.print("The programm view your mood");
+
+        char b = MoodSensor.getSmile();
+
+        View.print("Your mood is  " + b);
     }
 }

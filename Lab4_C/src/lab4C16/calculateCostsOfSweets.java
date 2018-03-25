@@ -7,25 +7,24 @@ package lab4C.lab4C16;
 
 /**
  *
- * @author Natallia Vasilyeva
- * BSU, group 1709v1, 08.03.18
+ * @author Natallia Vasilyeva BSU, group 1709v1, 08.03.18
  */
-
 public class calculateCostsOfSweets {
-    public static double findCostSweet (double a, double c) {
-      return c/a;
-      
+
+    public static double findCostSweet(double a, double c) {
+        return c / a;
+
     }
-    
-     public static double findCostGElatins (double d, double b) {
-        return b/d;
-      
+
+    public static double findCostGElatins(double d, double b) {
+        return b / d;
+
     }
-     
-public static double findDifferenceBetweenCosts(double a, double c, double d, double b ) {
-  double costOf1KgSweet = c/a;
-   double costOf1KgGelatins = b/d;
-  return costOf1KgSweet/costOf1KgGelatins;
-  
-}
+
+    public static double findDifferenceBetweenCosts(double a, double c, double d, double b) {
+        double costOf1KgSweet = c / a;
+        double costOf1KgGelatins = b / d;
+        return costOf1KgSweet / costOf1KgGelatins;
+
+    }
 }

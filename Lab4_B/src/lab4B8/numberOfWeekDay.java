@@ -10,8 +10,9 @@ package lab4B.lab4B8;
  * @author Natali
  */
 public class numberOfWeekDay {
+
     public static int getNumberOfWeekDay(int a) {
-        int x = 365/12;
-        int b = x-a;
+        int x = 365 / 12;
+        int b = x - a;
     }
 }

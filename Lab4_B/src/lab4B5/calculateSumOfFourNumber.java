@@ -16,7 +16,6 @@ public class calculateSumOfFourNumber {
         int d = ((a/10)/10)%10;
         int e = a/1000;
         
-        int sum = b+c+d+e;
-        return sum;
-    }
+      return b+c+d+e;
+         }
 }

@@ -13,13 +13,13 @@ public class convertCurrency {
     
      public static double convertEuroToDollar (double a) {
         
-        double b = a*1.25;
-        return b;
+        return a*1.25;
+     
     }
     
   public static double convertDollarToEuro(double a) {
         
-        double b = a/1.25;
-        return b;
+       return a/1.25;
+      
     }  
 }

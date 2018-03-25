@@ -4,10 +4,10 @@
  * and open the template in the editor.
  */
 package com.bsu.VasilyevaN.lab5_1;
-
 /**
  *
- * @author Natali
+ * @author Natallia Vasilyeva
+ * BSU, group 1709v1, 09.03.18
  */
 public class lab5_1 {
     public static void main(String[] args) {

@@ -15,7 +15,7 @@ public class reverceNumber {
         int d = ((a/10)/10)%10;
         int e = a/1000;
         
-       int newNumber = b*1000+c*100+d*10+e;
-        return newNumber;
+       return b*1000+c*100+d*10+e;
+       
     }
 }

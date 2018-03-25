@@ -10,13 +10,11 @@ package lab4C.lab4C2;
  */
 public class calculatorPrjamoygolnic {
     public static double calculatePerimetrPrjam(double a, double b) {
-        double perimetr = a*2+b*2;
-        
-        return perimetr;
+        return a*2+b*2;
+     
     }
      public static double calculateSquarePrjam(double a, double b) {
-        double square = a*b;
-        
-        return square;
+        return a*b;
+     
     }
 }

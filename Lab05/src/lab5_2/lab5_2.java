@@ -5,10 +5,10 @@
  */
 package com.bsu.VasilyevaN.lab5_2;
 
-
 /**
  *
- * @author Natali
+ * @author Natallia Vasilyeva
+ * BSU, group 1709v1, 09.03.18
  */
 public class lab5_2 {
      public static void main(String[] args) {

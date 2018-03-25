@@ -14,7 +14,6 @@ package lab4C.lab4C17;
 public class calculateDistance {
     public static double findDistances (double t1, double t2, double v, double u) {
         
-        double distance = t1/(v+u)+t2/(v-u);
-        return distance;
-    }
+       return t1/(v+u)+t2/(v-u);
+           }
 }

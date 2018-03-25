@@ -11,13 +11,12 @@ package lab4B.lab4B4;
 
 public class calculateTime {
         public static int calculateMinute(int a) {
-        int minute = a/60;
-        return minute;
-    }
+       return a/60;
+         }
     
     public static int calculateHour( int a) {
-        int hour = a/60/60;
-        return hour;
+        return a/60/60;
+     
     }
     
 }

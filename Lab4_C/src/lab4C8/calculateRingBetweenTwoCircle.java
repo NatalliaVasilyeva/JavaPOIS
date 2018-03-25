@@ -18,8 +18,8 @@ public class calculateRingBetweenTwoCircle {
         double s1 = PI*a*a;
         double s2 = PI*b*b;
         
-        double newS = s1-s2;
-        return newS;
+        return s1-s2;
+       
         
     }
 }

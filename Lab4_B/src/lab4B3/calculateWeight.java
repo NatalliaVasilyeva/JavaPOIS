@@ -11,13 +11,12 @@ package lab4B.lab4B3;
 
 public class calculateWeight {
      public static double calculateKilogramm(int a) {
-        double kilogramm = a/1000;
-        return kilogramm;
-    }
+       return a/1000;
+          }
     
     public static double calculateCetner( int a) {
-        double centner = a/1000/100;
-        return centner;
+        return a/1000/100;
+      
     }
     
 }

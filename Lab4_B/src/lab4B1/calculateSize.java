@@ -10,17 +10,14 @@ package lab4B.lab4B1;
  */
 public class calculateSize {
     public static int calculateKilobyte(int a) {
-        int kilobyte = a/1024;
-        return kilobyte;
-    }
+     return a/1024;
+      }
     
     public static int calculateMegabyte( int a) {
-        int megabyte = calculateKilobyte(a)/1024;
-        return megabyte;
-    }
+        return calculateKilobyte(a)/1024;
+           }
     
     public static int calculateGigabyte( int a){
-        int gigabyte = calculateMegabyte(a)/1024;
-        return gigabyte;
-    }
+        return calculateMegabyte(a)/1024;
+         }
 }

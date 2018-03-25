@@ -11,9 +11,8 @@ package lab4B.lab4B10;
  */
 public class findCentury {
     public static int findCenturyFromYear( int a) {
-        int century = a/100+1;
-        
-        return century;
+       return a/100+1;
+   
     }
     
 }

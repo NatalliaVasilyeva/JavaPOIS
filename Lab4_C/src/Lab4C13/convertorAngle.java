@@ -13,12 +13,12 @@ public class convertorAngle {
     
     final static double PI = 3.141596;
     public static double convertAngleFromRadianToDegree (double a) {
-        double degree = (a*180)/PI;
-        return degree;
+       return (a*180)/PI;
+      
     }
     
      public static double convertAngleFromDegreeToRadian (double a) {
-        double radian = (a*PI)/180;
-        return radian;
+        return (a*PI)/180;
+        
     }
 }

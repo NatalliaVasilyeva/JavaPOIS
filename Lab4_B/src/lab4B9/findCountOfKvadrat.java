@@ -12,16 +12,12 @@ package lab4B.lab4B9;
 public class findCountOfKvadrat {
     public static int findCountOfKvadrats(int a, int b, int c) {
         
-        int countOfKvadrat = b/a+c/a;
-        
-        return countOfKvadrat;
+       return b/a+c/a;
+       
     }
         
         public static int findLeaveSquare(int a, int b, int c) {
-      
-    
-        int leaveSquare = b*c - (b/a+c/a)*(a*a);
-        return   leaveSquare;
-
-    }
+          
+       return b*c - (b/a+c/a)*(a*a);
+          }
 }

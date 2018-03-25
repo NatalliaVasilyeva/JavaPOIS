@@ -18,8 +18,8 @@ public class calculateSquareOrPerimetrTriangle {
          double side2 = Math.sqrt(Math.pow((x3-x2),2)+Math.pow((y3-y2),2));
           double side3 = Math.sqrt(Math.pow((x1-x3),2)+Math.pow((y1-y3),2));
         
-          double p = side1+side2+side3;
-          return p;
+         return side1+side2+side3;
+       
     }
     
     public static double findSquare(double x1, double x2, double x3, double y1, double y2, double y3 ) {
@@ -29,9 +29,8 @@ public class calculateSquareOrPerimetrTriangle {
           
           double pp = (side1+side2+side3)/2;
           
-          double s = Math.sqrt(pp*(pp-side1)*(pp-side2)*(pp-side3));
+         return Math.sqrt(pp*(pp-side1)*(pp-side2)*(pp-side3));
           
-          return s;
-       
+             
     }
 }

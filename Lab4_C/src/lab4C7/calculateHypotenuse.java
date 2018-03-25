@@ -12,12 +12,10 @@ package lab4C.lab4C7;
 public class calculateHypotenuse {
     
     public static double findHypotenuse(double a, double b) {
-        double h = Math.sqrt(a*a+b*b);
-        return h;
-    }
+        return Math.sqrt(a*a+b*b);
+          }
     
     public static double findPerimetr(double a, double b) {
-        double p = a+b+ findHypotenuse(a,b);
-        return p;
-    }
+        return a+b+ findHypotenuse(a,b);
+          }
 }

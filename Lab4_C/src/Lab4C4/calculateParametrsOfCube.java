@@ -11,12 +11,12 @@ package lab4C.Lab4C4;
 public class calculateParametrsOfCube {
     
     public static double volumeOfCube (double a) {
-        double volume = a*a*a;
-        return volume;
+        return a*a*a;
+     
     }
     
     public static double squareOfCube( double a) {
-        double square = 6*a*a;
-        return square;
+        return 6*a*a;
+     
 }
 }

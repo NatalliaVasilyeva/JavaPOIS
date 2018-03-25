@@ -12,7 +12,7 @@ package lab4C.lab4C20;
 public class linearEquation {
     public static double findRootOgEquation (double a, double b) {
         
-        double x = -b/a;
-        return x;
+       return -b/a;
+      
     }
 }

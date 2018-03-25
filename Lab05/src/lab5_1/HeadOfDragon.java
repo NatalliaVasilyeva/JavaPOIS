@@ -15,27 +15,29 @@ public class HeadOfDragon {
      
    public static int countHead (int a) {
          int sum=0;
+         final int FIRST_PERIOD = 200;
+         final int SECOND_PERIOD = 300;
          
-     if ( a>=0&&a<200) {
+     if ( a>=0&&a<FIRST_PERIOD) {
          
           sum =a*3;
       }   
       
-       if ( a>=200&&a<300) {
+       if ( a>=FIRST_PERIOD&&a<SECOND_PERIOD) {
          
-          sum =200*3+(a-200)*2;
+          sum =FIRST_PERIOD*3+(a-FIRST_PERIOD)*2;
       }   
       
-       if ( a>=300) {
+       if ( a>=SECOND_PERIOD) {
          
-          sum =200*3+100*2+(a-300)*1;
+          sum =FIRST_PERIOD*3+(SECOND_PERIOD-FIRST_PERIOD)*2+(a-SECOND_PERIOD);
       }   
       
       return sum;}
    
        
      public static int countEyes(int a) {
-         int x = 2*countHead(a);
-         return x;
+         return 2*countHead(a);
+         
      }
 }

@@ -11,12 +11,10 @@ package lab4C.lab4C5;
 public class findArithmAndGeometrMean {
     
     public static double ArithmeticalMean( double a, double b) {
-        double arithm = (a+b)/2;
-        return arithm;   
+        return (a+b)/2; 
     }
     
     public static double GeometricMean( double a, double b) {
-        double geom = Math.sqrt(a*b);
-        return geom;   
+        return Math.sqrt(a*b);
     }
 }

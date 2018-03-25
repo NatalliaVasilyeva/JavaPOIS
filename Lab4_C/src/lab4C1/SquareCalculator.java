@@ -11,12 +11,12 @@ package lab4C.lab4C1;
 public class SquareCalculator {
     public static double CalculatePerimetr(double a) {
         
-       double perimetr = a*4;
-       return perimetr;
+       return a*4;
+     
     }
     public static double CalculateSquare(double a) {
         
-       double square = a*a;
-       return square;
+       return a*a;
+   
     }
 }

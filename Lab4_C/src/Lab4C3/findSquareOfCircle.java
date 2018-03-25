@@ -13,12 +13,12 @@ public class findSquareOfCircle {
    final static double PI = 3.1415926536;
     
     public static double calculateSquare( double a) {
-        double s = 2*PI*a*a;
-        return s;
+        return 2*PI*a*a;
+      
     }
     
       public static double calculateLenght( double a) {
-        double l = 2*PI*a;
-        return l;
+       return 2*PI*a;
+       
     }
 }

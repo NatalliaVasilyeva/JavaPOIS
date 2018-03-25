@@ -16,8 +16,8 @@ public class calculateParametrsOfRectangle {
         
         double l = x2-x1;
         double w = y2-y1;
-        double s = l*w;
-        return s;   
+       return l*w;
+     
          
     }
     
@@ -25,8 +25,8 @@ public class calculateParametrsOfRectangle {
         
         double l = x2-x1;
         double w = y2-y1;
-        double p = l*2+w*2;
-        return p;   
+        return  l*2+w*2;
+        
          
     }
 }

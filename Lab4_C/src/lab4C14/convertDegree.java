@@ -12,14 +12,14 @@ package lab4C.lab4C14;
 public class convertDegree {
     public static double convertDegreeFromCelsiumToFarentheit(double a) {
         
-        double b = a*9/5+32;
-        return b;
+        return a*9/5+32;
+  
     }
     
   public static double convertDegreeFromFarentheitToCelsium(double a) {
         
-        double b = (a-32)*5/9;
-        return b;
+     return (a-32)*5/9;
+     
     }  
     
 }

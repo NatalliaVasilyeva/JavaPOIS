@@ -14,8 +14,8 @@ public class calculateSrednee {
         int d = ((a/10)/10)%10;
         int e = a/1000;
         
-        int srArif = (b+c+d+e)/4;
-        return srArif;
+       return (b+c+d+e)/4;
+      
     }
      public static double getSredneeGoometr(int a) {
         int b = a%10;
@@ -23,8 +23,8 @@ public class calculateSrednee {
         int d = ((a/10)/10)%10;
         int e = a/1000;
         
-        double srGeom = Math.pow(b*c*d*e, 4);
-        return srGeom;
+       return Math.pow(b*c*d*e, 4);
+      
     }
     
 }

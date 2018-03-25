@@ -11,7 +11,7 @@ package lab4C.lab4C19;
  */
 public class calculateDistanceBetweenAuto2 {
     public static double findDistance2 (double v1, double v2, double s, double t) {
-        double distance = s+((v1+v2)*t);
-        return distance;
+       return s+((v1+v2)*t);
+       
     }
 }

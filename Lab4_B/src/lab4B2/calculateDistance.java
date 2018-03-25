@@ -12,13 +12,13 @@ package lab4B.lab4B2;
 
 public class calculateDistance {
     public static double calculateMeters(int a) {
-        double meters = a/100;
-        return meters;
+       return a/100;
+    
     }
     
     public static double calculateKilometers( int a) {
-        double kilometers = a/100/1000;
-        return kilometers;
+      return a/100/1000;
+   
     }
     
 }

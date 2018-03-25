@@ -13,19 +13,19 @@ package lab4C.lab4C16;
 
 public class calculateCostsOfSweets {
     public static double findCostSweet (double a, double c) {
-        double costOf1KgSweet = c/a;
-        return costOf1KgSweet;
+      return c/a;
+      
     }
     
      public static double findCostGElatins (double d, double b) {
-        double costOf1KgGelatins = b/d;
-        return costOf1KgGelatins;
+        return b/d;
+      
     }
      
 public static double findDifferenceBetweenCosts(double a, double c, double d, double b ) {
   double costOf1KgSweet = c/a;
    double costOf1KgGelatins = b/d;
-   double times = costOf1KgSweet/costOf1KgGelatins;
-   return times;
+  return costOf1KgSweet/costOf1KgGelatins;
+  
 }
 }

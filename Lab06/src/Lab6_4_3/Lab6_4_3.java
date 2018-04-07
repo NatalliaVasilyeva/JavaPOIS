@@ -14,7 +14,7 @@ public class Lab6_4_3 {
     public static void main(String[] args) {
         while (true) {
             long number = UserInput.input("Input a number :");
-            View.print("The max digit is " + MaxDigitOfNumber.getMaxNumberDigit(number));
+            View.print("The max digit is " + MaxDigitOfNumber.findMaxNumberDigit(number));
             if (!Complete.complete("Do you want to continue?")) {
                 break;
             }

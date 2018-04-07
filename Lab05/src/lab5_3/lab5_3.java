@@ -5,7 +5,6 @@
  */
 package com.bsu.VasilyevaN.lab5_3;
 
-import java.util.Random;
 
 /**
  *
@@ -16,16 +15,7 @@ public class lab5_3 {
     public static void main(String[] args) {
 
         View.previewShow();
+        View.result(diceLogic.Counting());
 
-        Random rn1 = new Random();
-
-        int dice1 = rn1.nextInt(6) + 1;
-        int dice2 = rn1.nextInt(6) + 1;
-        int sum = diceLogic.Counting(dice1, dice2);
-
-        View.showBonesOne(dice1);
-        View.showBonesTwo(dice2);
-
-        View.showSum(sum);
     }
 }

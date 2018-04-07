@@ -16,7 +16,7 @@ public class Lab6_4_6 {
         while (true) {
             long number = UserInput.input("Input a number :");
             View.print("The simple dividers of number: ");
-            NumberDivider.getAllDivider(number);
+            NumberDivider.findAllDivider(number);
             if (!Complete.complete("Do you want to continue?")) {
                 break;
             }

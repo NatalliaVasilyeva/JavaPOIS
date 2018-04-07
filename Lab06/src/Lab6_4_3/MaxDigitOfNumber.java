@@ -21,7 +21,7 @@ public class MaxDigitOfNumber {
         return count;
     }
 
-    public static int getMaxNumberDigit(long number) {
+    public static int findMaxNumberDigit(long number) {
         int size = countNumberQuantity(number);
         int[] mas = new int[size];
 

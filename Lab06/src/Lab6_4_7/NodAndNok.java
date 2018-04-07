@@ -11,7 +11,7 @@ package com.bsu.VasilyevaN.Lab6_4_7;
  */
 public class NodAndNok {
 
-    public static long getNOD(long a, long b) {
+    public static long findNOD(long a, long b) {
 
         while (a != 0 && b != 0) {
             if (a > b) {
@@ -24,9 +24,9 @@ public class NodAndNok {
         return a + b;
     }
 
-    public static long getNOK(long a, long b) {
+    public static long findNOK(long a, long b) {
 
-        return a * b / getNOD(a, b);
+        return a * b / findNOD(a, b);
 
     }
 

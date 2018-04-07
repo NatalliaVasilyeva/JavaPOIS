@@ -15,16 +15,16 @@ public class lab5_4 {
         
         
         char ch = UserInput.input("Input the char ");
-       View.print("The char vowel? " + VowelOrConsonantLetter.getVowelLetterFirstMethod(ch));
+       View.print("The char vowel? " + VowelOrConsonantLetter.isVowelLetterFirstMethod(ch));
        
        char ch1 = UserInput.input("Input the char ");
-       View.print("The char vowel? " + VowelOrConsonantLetter.getVowelLetterSecondMethod(ch1));
+       View.print("The char vowel? " + VowelOrConsonantLetter.isVowelLetterSecondMethod(ch1));
        
        char ch2 = UserInput.input("Input the char ");
-       View.print("The char vowel? " + VowelOrConsonantLetter.getVowelLetterThirdMethod(ch2));
+       View.print("The char vowel? " + VowelOrConsonantLetter.isVowelLetterThirdMethod(ch2));
        
        char ch3 = UserInput.input("Input the char ");
-       View.print("The char vowel? " + VowelOrConsonantLetter.getVowelLetterFourthMethod(ch3));
+       View.print("The char vowel? " + VowelOrConsonantLetter.isVowelLetterFourthMethod(ch3));
        
     }
 }

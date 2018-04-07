@@ -15,16 +15,9 @@ public class View {
 
         System.out.println(" A random way shows the number of points dropped on two bones");
     }
+    
+    public static void result(String msg) {
+        System.out.println(msg);
+    } 
 
-    public static void showBonesOne(int a) {
-        System.out.println(" The number of points dropped on the first bone: " + a);
-    }
-
-    public static void showBonesTwo(int b) {
-        System.out.println(" The number of points dropped on the first bone: " + b);
-    }
-
-    public static void showSum(int c) {
-        System.out.println(" The total number of points dropped on two bones is: " + c);
-    }
 }

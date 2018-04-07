@@ -13,7 +13,7 @@ public class lab5_5 {
     public static void main(String[] args) {
         View.print("Now you get a cake with surprise");
         
-        View.print(CakeWithSurprise.getCake() + " with " + CakeWithSurprise.getSurprise());
+        View.print(CakeWithSurprise.chooseCake() + " with " + CakeWithSurprise.chooseSurprise());
         
     }
 }

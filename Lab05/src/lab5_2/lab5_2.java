@@ -15,8 +15,8 @@ public class lab5_2 {
 
         View.print("The programm view your mood");
 
-        char b = MoodSensor.getSmile();
+        char yourMood = MoodSensor.checkMood();
 
-        View.print("Your mood is  " + b);
+        View.print("Your mood is  " + yourMood);
     }
 }

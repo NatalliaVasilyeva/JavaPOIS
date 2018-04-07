@@ -13,24 +13,24 @@ import java.util.Random;
 
 public class MoodSensor {
 
-    public static char getSmile() {
+    public static final int MOOD_QUANTITY=5;
+    public static final char HAPPY = '\u263a';
+    public static final char SAD = '\u263a';
+    public static final char PLAYFUL = '\u26F9'; 
+    public static final char ANGRY = '\uDE08'; 
+    public static final char NEUTRAL = '\u26C4'; 
+    public static char MOOD=NEUTRAL;
+    
+    public static char checkMood() {
 
-        Random rand = new Random();
-
-        int x = rand.nextInt(9) + 1;
-        switch (x) {
-            case 1:
-                return '\u263a';
-            case 2:
-                return '\u2639';
-            case 3:
-                return '\u26F9';
-            case 4:
-                return '\uDE08';
-            default:
-                return '\u26C4';
-
+        switch (new Random().nextInt(MOOD_QUANTITY)) {
+            case 1: MOOD = HAPPY; break;
+            case 2: MOOD=SAD; break;
+            case 3: MOOD=PLAYFUL; break;
+            case 4: MOOD=ANGRY; break;
+            default: MOOD=NEUTRAL; break;
         }
+        return MOOD;
     }
 
 }

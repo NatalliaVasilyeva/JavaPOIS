@@ -17,8 +17,8 @@ public class Lab6_4_7 {
             long a = UserInput.input("Input a first number :");
             long b = UserInput.input("Input a second number :");
 
-            View.print("The NOD is " + NodAndNok.getNOD(a, b));
-            View.print("The NOK is " + NodAndNok.getNOK(a, b));
+            View.print("The NOD is " + NodAndNok.findNOD(a, b));
+            View.print("The NOK is " + NodAndNok.findNOK(a, b));
             if (!Complete.complete("Do you want to continue?")) {
                 break;
             }

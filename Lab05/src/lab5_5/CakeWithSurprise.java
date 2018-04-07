@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package com.bsu.VasilyevaN.lab5_5;
+ 
 
 import java.util.Random;
 
@@ -13,45 +14,37 @@ import java.util.Random;
  */
 public class  CakeWithSurprise {
 
-           public static String getSurprise() {
-     
-         Random rand = new Random();
-
-        int x = rand.nextInt(5) + 1;
-        String answer;
-        switch (x) {
-            case 1:
-                answer ="\uD83C\uDF51"; 
-            case 2:
-                answer = "\uD83C\uDF49";
-            case 3:
-                answer = "\uD83C\uDF52";
-            case 4:
-                answer = "\uD83C\uDF4F";
-            default:
-                answer = "\uD83C\uDF53";
-
+    public static final int SUPRISE_QUANTITY = 5;
+    public static final String PEACH = "\uD83C\uDF51";
+    public static final String WATERMELON = "\uD83C\uDF49";
+    public static final String CHERRY = "\uD83C\uDF52";
+    public static final String APPLE = "\uD83C\uDF4F";
+    public static final String STRAWBERRY = "\uD83C\uDF53";
+    public static String SURPRISE = STRAWBERRY;
+    
+    public static final int CAKE_QUANTITY = 3;
+    public static final String BIRTHDAY_CAKE = "\uD83C\uDF82";
+    public static final String SHORTCAKE = "\uD83C\uDF70"; 
+    public static final String DOUGHNUT = "\uD83C\uDF69"; 
+    public static String CAKE = DOUGHNUT;
+    
+    public static String chooseSurprise() {
+            
+        switch (new Random().nextInt(SUPRISE_QUANTITY)+1) {
+            case 1: SURPRISE=PEACH; break;
+            case 2: SURPRISE=WATERMELON; break;
+            case 3: SURPRISE=CHERRY; break;
+            case 4: SURPRISE=APPLE; break;
         }
-        return answer;
+        return SURPRISE;
 }
            
-           public static String getCake() {
-         
-               Random rand = new Random();
-
-        int b = rand.nextInt(3) + 1;
-        String answer;
-        
-          switch (b) {
-            case 1:
-                answer ="\uD83C\uDF82"; 
-            case 2:
-                answer = "\uD83C\uDF70";
-            default:
-                answer = "\uD83C\uDF69";
-
+    public static String chooseCake() {     
+          switch (new Random().nextInt(CAKE_QUANTITY)+1) {
+            case 1: CAKE=BIRTHDAY_CAKE; break;
+            case 2: CAKE=SHORTCAKE; break;
         }
-        return answer;
+        return CAKE;
                
            }
 }

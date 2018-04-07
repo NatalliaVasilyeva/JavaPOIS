@@ -11,7 +11,7 @@ package com.bsu.VasilyevaN.Lab6_4_6;
  */
 public class NumberDivider {
 
-    public static void getAllDivider(long number) {
+    public static void findAllDivider(long number) {
 
         for (int i = 2; i < number; i++) {
 

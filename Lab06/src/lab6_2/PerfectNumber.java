@@ -13,20 +13,17 @@ public class PerfectNumber {
 
     public static boolean PerNumberLogic(int number) {
         int sum = 0;
-        boolean answer;
         for (int i = 1; i < number; i++) {
             if (number % i == 0) {
                 sum += i;
             }
         }
 
-        if (number == sum) {
-            answer = true;
-        } else {
-            answer = false;
+            if (number == sum) {
+                 return true;
+          } else {
+                 return false;
         }
-
-        return answer;
     }
 
 }

@@ -30,7 +30,7 @@ public class lab5_6 {
         
          year = UserInput.input("Input the year of date ");
        	         
-        View.print("The next day is - " + NextDate.getNextDay(day, month, year));
+        View.print("The next day is - " + NextDate.takeNextDay(day, month, year));
         
     }
 }

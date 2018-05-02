@@ -45,10 +45,10 @@ public class lab7_1 {
       trolleybuses.addElement(new Schedule("bus", trolleybus1, timeTrolleybus1, intervalOfTrolleybus1));
       
       //print info about transport
-      View.print(Schedule.infoBus("bus", bus1, timeBus1, intervalOfBus1));
-      View.print(Schedule.infoBus("bus", bus2, timeBus2, intervalOfBus2));
+      View.print(Schedule.takeInfoBus("bus", bus1, timeBus1, intervalOfBus1));
+      View.print(Schedule.takeInfoBus("bus", bus2, timeBus2, intervalOfBus2));
       
-      View.print(Schedule.infoTrolleybus("trolleybus", trolleybus1, timeTrolleybus1, intervalOfTrolleybus1));
+      View.print(Schedule.takeInfoTrolleybus("trolleybus", trolleybus1, timeTrolleybus1, intervalOfTrolleybus1));
       
     }
 }

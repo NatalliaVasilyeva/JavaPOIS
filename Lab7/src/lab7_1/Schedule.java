@@ -60,13 +60,13 @@ public class Schedule {
         this.interval = interval;
     }
 
-     public static String infoBus(String nameOfTransport, Transport transport, TimeOfWork timeOfWork, Interval interval) {
+     public static String takeInfoBus(String nameOfTransport, Transport transport, TimeOfWork timeOfWork, Interval interval) {
 
        return "Schedule: " + "name of transport - " + " bus" + ", number of transport - " + transport.getNumber() + ", routre is " + transport.getRouter()+ ", time of begin work is " + timeOfWork.getBeginOfWork() + ", time of end work is " + timeOfWork.getEndOfWork()+ ", interval is " + interval.getIntervalOfMovement() + " minute";
 
     }
    
-    public static String infoTrolleybus(String nameOfTransport, Transport transport, TimeOfWork timeOfWork, Interval interval) {
+    public static String takeInfoTrolleybus(String nameOfTransport, Transport transport, TimeOfWork timeOfWork, Interval interval) {
 
        return "Schedule: " + "name of transport - " + " trolleybus" + ", number of transport - " + transport.getNumber() + ", routre is " + transport.getRouter()+ ", time of begin work is " + timeOfWork.getBeginOfWork() + ", time of end work is " + timeOfWork.getEndOfWork()+ ", interval is " + interval.getIntervalOfMovement()+ " minute";
 

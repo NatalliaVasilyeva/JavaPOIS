@@ -16,7 +16,7 @@ public class lab6_1 {
         int a = UserInput.input("Input number of repeats: ");
 
         View.print("We has next information: ");
-        Coin.findSide(a);
+        Coin.findCountOfCoinHeads(a);
 
     }
 }

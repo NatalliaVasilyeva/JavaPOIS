@@ -15,7 +15,7 @@ public class Lab6_2 {
         View.print("Check is the number perfect or not");
         int number = UserInput.input("Please, input the number");
         View.print("If number is perfect you will see -  true, if non-perfect  - false");
-        View.print("Is " + PerfectNumber.PerNumberLogic(number));
+        View.print("Is " + PerfectNumber.isPerfect(number));
 
     }
 }

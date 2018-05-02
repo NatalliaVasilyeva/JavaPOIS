@@ -12,7 +12,7 @@ package com.bsu.VasilyevaN.lab6_3;
 public class ReverceNumber {
 
     public static int findReverceNumber(int number) {
-
+        number = number > 0 ? number : -number;
         int x = 0;
         int numberR = 0;
         while (number > 0) {

@@ -11,19 +11,15 @@ package com.bsu.VasilyevaN.lab6_2;
  */
 public class PerfectNumber {
 
-    public static boolean PerNumberLogic(int number) {
-        int sum = 0;
-        for (int i = 1; i < number; i++) {
+    public static boolean isPerfect(int number) {
+        
+        int sum = 1;
+        for (int i = 2; i <= number/2; i++) {
             if (number % i == 0) {
                 sum += i;
             }
         }
-
-            if (number == sum) {
-                 return true;
-          } else {
-                 return false;
+            return number == sum; 
         }
     }
 
-}

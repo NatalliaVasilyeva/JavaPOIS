@@ -23,7 +23,7 @@ public class CreatorLocomotives {
          ItemsOfTransport coach = null;
          if (locomotiveType == TypeOfLocomotive.ELECTRIC) {
               coach= new ElectricLocomotive(id, itemsNumber, power);
-         }
+        }
          else if (locomotiveType == TypeOfLocomotive.UGOLNIY) {
              coach= new UgolniyLocomotive(id, itemsNumber, power);
          }
@@ -33,4 +33,5 @@ public class CreatorLocomotives {
          
          return coach;
      }
-}
+     
+   }

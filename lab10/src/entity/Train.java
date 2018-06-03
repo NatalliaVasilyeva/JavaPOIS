@@ -5,29 +5,18 @@
  */
 package com.bsu.vasilyeva_n.lab10.entity;
 import com.bsu.vasilyeva_n.lab10.entity.ItemsOfTransport;
-import com.bsu.vasilyeva_n.lab10.entity.ElectricLocomotive;
-import com.bsu.vasilyeva_n.lab10.entity.UgolniyLocomotive;
-import java.io.IOException;
 import java.util.ArrayList;
-import com.bsu.vasilyeva_n.lab10.entity.PassengerCoaches;
-import com.bsu.vasilyeva_n.lab10.entity.PassengerCoaches.TypeOfPlace;
-import com.bsu.vasilyeva_n.lab10.entity.PlackartCoach;
-import com.bsu.vasilyeva_n.lab10.entity.SVCoach;
-import com.bsu.vasilyeva_n.lab10.entity.RestourantCoach;
-import com.bsu.vasilyeva_n.lab10.entity.FreightCoaches;
-import com.bsu.vasilyeva_n.lab10.entity.ConteinerFreightCoach;
-import com.bsu.vasilyeva_n.lab10.entity.CisternaFreightCoach;
-import com.bsu.vasilyeva_n.lab10.entity.PlatformaFreightCoach;
+
 /**
  *
  * @author Natali
  */
-public class Train {
+public class Train  {
     
     private String numberOfTrain;
     private String routeOfTrain;
     
-    ArrayList<ItemsOfTransport> coashes = new ArrayList<ItemsOfTransport>();
+    ArrayList<ItemsOfTransport> coaches = new ArrayList<ItemsOfTransport>();
 
     public Train(String numberOfTrain, String routeOfTrain) {
         this.numberOfTrain = numberOfTrain;
@@ -50,13 +39,32 @@ public class Train {
         this.routeOfTrain = routeOfTrain;
     }
 
-      
+        
+    public ArrayList<ItemsOfTransport> getCoaches(){
+        return coaches;
+    }
+    
+    public void setCoaches(ArrayList<ItemsOfTransport> coashes){
+    this.coaches=coaches;
+    }
+    
+    
+    
     public void add(ItemsOfTransport coach){
-        coashes.add(coach);
+        coaches.add(coach);
     };
 
 
-   
+     @Override
+     public String toString() {
+         
+         StringBuilder msg = new StringBuilder();
+         msg.append("The information about train: " + "\n");
+         msg.append("Train contain " + "items of transport " + coaches +  ", " + "number of train " + getNumberOfTrain() + ", "+ "router is " + getRouteOfTrain() + "\n");
+        
+         
+         return msg.toString();
+     }
     
     
 }

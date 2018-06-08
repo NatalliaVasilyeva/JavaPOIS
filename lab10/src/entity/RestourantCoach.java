@@ -16,13 +16,15 @@ public class RestourantCoach extends PassengerCoaches {
     
     private int countOfTable;
 
-    public RestourantCoach(int id, TypeOfPlace place, int length, String itemsNumber,  int capacityOfPassengerInCoach, int capacityOfLaggageInCoach) throws IOException {
+    public RestourantCoach(int id, TypeOfPlace place, int length, String itemsNumber,  int capacityOfPassengerInCoach, int capacityOfLaggageInCoach,  int numberOfPassenger, int weightOfLaggage) throws IOException {
         super(id);
         setPlaceType(place);
         setLength(length);
         setItemsNumber(itemsNumber);
         setCapacityOfPassengerInCoach(capacityOfPassengerInCoach);
-        setCapacityOfLaggageInCoach(0);      
+        setCapacityOfLaggageInCoach(0);    
+        setNumberOfPassenger(numberOfPassenger);
+        setWeightOfLaggage(0);
     }
 
     public int getCountOfTable() {

@@ -14,6 +14,7 @@ import java.io.IOException;
 public abstract class ItemsOfTransport {
      private final int id;
      private String itemsNumber;
+     int n;
 
     public ItemsOfTransport(int id) throws IOException {
         this.id = id;
@@ -30,7 +31,8 @@ public abstract class ItemsOfTransport {
     public void setItemsNumber(String itemsNumber) {
         this.itemsNumber = itemsNumber;
     }
-     
+   
+    
      public abstract String connectItems();
      public abstract String disconnectItems();
 

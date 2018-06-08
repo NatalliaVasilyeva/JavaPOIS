@@ -19,7 +19,7 @@ public class ElectricLocomotive extends Locomotive {
         super(id);
         setItemsNumber(itemsNumber);
         setPower(power);
-    }
+       }
 
     public int getBatteryCapacity() {
         return batteryCapacity;

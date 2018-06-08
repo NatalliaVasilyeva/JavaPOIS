@@ -5,7 +5,6 @@
  */
 package com.bsu.vasilyeva_n.lab10.utilites;
 import com.bsu.vasilyeva_n.lab10.entity.ItemsOfTransport;
-import com.bsu.vasilyeva_n.lab10.entity.PassengerCoaches;
 import com.bsu.vasilyeva_n.lab10.entity.PassengerCoaches.TypeOfPlace;
 import com.bsu.vasilyeva_n.lab10.entity.PlackartCoach;
 import com.bsu.vasilyeva_n.lab10.entity.SVCoach;
@@ -23,21 +22,18 @@ public class CreatorPassengerCoaches {
         RESTAURANT;
      }
      
-     public static ItemsOfTransport createCoach (TypeOfPassengerCoach passengerCoachesType, int id, TypeOfPlace place, int length, String itemsNumber,  int capacityOfPassengerInCoach, int capacityOfLaggageInCoach) throws IOException {
+     public static ItemsOfTransport createCoach (String passengerCoachesType, int id, TypeOfPlace place, int length, String itemsNumber,  int capacityOfPassengerInCoach, int capacityOfLaggageInCoach, int numberOfPassenger, int weightOfLaggage) throws IOException {
          ItemsOfTransport coach = null;
-         if (passengerCoachesType == TypeOfPassengerCoach.PLACKART) {
-              coach= new PlackartCoach(id, place, length, itemsNumber, capacityOfPassengerInCoach, capacityOfLaggageInCoach );
+         if (passengerCoachesType.equalsIgnoreCase("PLACKART")) {
+              coach= new PlackartCoach(id, place, length, itemsNumber, capacityOfPassengerInCoach, capacityOfLaggageInCoach, numberOfPassenger, weightOfLaggage);
          }
-         else if (passengerCoachesType == TypeOfPassengerCoach.SV) {
-             coach= new SVCoach(id, place, length, itemsNumber, capacityOfPassengerInCoach, capacityOfLaggageInCoach );
+         else if (passengerCoachesType.equalsIgnoreCase("SV")) {
+             coach= new SVCoach(id, place, length, itemsNumber, capacityOfPassengerInCoach, capacityOfLaggageInCoach, numberOfPassenger, weightOfLaggage );
          }
-         else if (passengerCoachesType == TypeOfPassengerCoach.RESTAURANT) {
-             coach= new RestourantCoach(id, place, length, itemsNumber, capacityOfPassengerInCoach, capacityOfLaggageInCoach );
+         else if (passengerCoachesType.equalsIgnoreCase("RESTAURANT")) {
+             coach= new RestourantCoach(id, place, length, itemsNumber, capacityOfPassengerInCoach, capacityOfLaggageInCoach, numberOfPassenger, weightOfLaggage );
          }
-         else {
-             System.out.println("There are no such passenger coaches");
-         }
-         
+              
          return coach;
      }
 }

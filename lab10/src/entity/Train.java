@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package com.bsu.vasilyeva_n.lab10.entity;
-import com.bsu.vasilyeva_n.lab10.entity.ItemsOfTransport;
 import java.util.ArrayList;
 
 /**
@@ -16,8 +15,9 @@ public class Train  {
     private String numberOfTrain;
     private String routeOfTrain;
     
-    ArrayList<ItemsOfTransport> coaches = new ArrayList<ItemsOfTransport>();
-
+    ArrayList<ItemsOfTransport> coaches= new ArrayList<ItemsOfTransport>();
+    
+    
     public Train(String numberOfTrain, String routeOfTrain) {
         this.numberOfTrain = numberOfTrain;
         this.routeOfTrain = routeOfTrain;
@@ -55,12 +55,16 @@ public class Train  {
     };
 
 
+   
+    
+    
+    
      @Override
      public String toString() {
          
          StringBuilder msg = new StringBuilder();
          msg.append("The information about train: " + "\n");
-         msg.append("Train contain " + "items of transport " + coaches +  ", " + "number of train " + getNumberOfTrain() + ", "+ "router is " + getRouteOfTrain() + "\n");
+         msg.append("Train contain: " + getCoaches() +  ", " + "number of train " + getNumberOfTrain() + ", "+ "router is " + getRouteOfTrain() + "\n");
         
          
          return msg.toString();

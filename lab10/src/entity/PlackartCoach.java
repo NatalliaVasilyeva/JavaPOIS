@@ -17,14 +17,16 @@ public class PlackartCoach extends PassengerCoaches {
     
     private int countOfSleepingPlace;
 
-    public PlackartCoach(int id, TypeOfPlace place, int length, String itemsNumber,  int capacityOfPassengerInCoach, int capacityOfLaggageInCoach) throws IOException {
+    public PlackartCoach(int id, TypeOfPlace place, int length, String itemsNumber,  int capacityOfPassengerInCoach, int capacityOfLaggageInCoach,  int numberOfPassenger, int weightOfLaggage) throws IOException {
         super(id);
         setPlaceType(place);
         setLength(length);
         setItemsNumber(itemsNumber);
         setCapacityOfPassengerInCoach(capacityOfPassengerInCoach);
-        setCapacityOfLaggageInCoach(capacityOfLaggageInCoach);      
-    }
+        setCapacityOfLaggageInCoach(capacityOfLaggageInCoach);   
+        setNumberOfPassenger(numberOfPassenger);
+        setWeightOfLaggage(weightOfLaggage);
+        }
 
     public int getCountOfSleepingPlace() {
         return countOfSleepingPlace;

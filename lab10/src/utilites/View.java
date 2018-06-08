@@ -5,19 +5,19 @@
  */
 package com.bsu.vasilyeva_n.lab10.utilites;
 
-import com.bsu.vasilyeva_n.lab10.entity.Train;
-
-
 /**
  *
- * @author Natali
+ * @author Natallia Vasilyeva pois1709v1
+ * 09.05.2018
  */
-public class CreatorTrain {
+public class View {
 
-    
-    public static Train createTrain(String numberOfTrain, String routeOfTrain) {
-     
-     return new Train(numberOfTrain, routeOfTrain);
-
+    public static void print(String msg) {
+        System.out.print(msg);
     }
+    
+     public static void printInt(int msg) {
+        System.out.print(msg);
+    }
+    
 }

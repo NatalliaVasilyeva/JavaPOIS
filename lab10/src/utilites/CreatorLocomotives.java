@@ -14,18 +14,14 @@ import java.io.IOException;
  * @author Natali
  */
 public class CreatorLocomotives {
-     public enum TypeOfLocomotive {
-         ELECTRIC,
-         UGOLNIY;
-     }
      
-     public static ItemsOfTransport createCoach (TypeOfLocomotive locomotiveType, int id, String itemsNumber, int power) throws IOException {
+     public static ItemsOfTransport createCoach (String locomotiveType, int id, String itemsNumber, int power) throws IOException {
          ItemsOfTransport coach = null;
-         if (locomotiveType == TypeOfLocomotive.ELECTRIC) {
+         if (locomotiveType.equalsIgnoreCase("ELECTRIC")) {
               coach= new ElectricLocomotive(id, itemsNumber, power);
         }
-         else if (locomotiveType == TypeOfLocomotive.UGOLNIY) {
-             coach= new UgolniyLocomotive(id, itemsNumber, power);
+         else if (locomotiveType.equalsIgnoreCase("UGOLNIY")) {
+             coach= new UgolniyLocomotive(id, itemsNumber, power );
          }
          else {
              System.out.println("There are no such locomotives");

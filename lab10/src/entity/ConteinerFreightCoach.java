@@ -51,6 +51,31 @@ public class ConteinerFreightCoach extends FreightCoaches {
          
          return msg.toString();
      }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 97 * hash + this.heigthOfFreightCoaches;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final ConteinerFreightCoach other = (ConteinerFreightCoach) obj;
+        if (this.heigthOfFreightCoaches != other.heigthOfFreightCoaches) {
+            return false;
+        }
+        return true;
+    }
     
     
 }

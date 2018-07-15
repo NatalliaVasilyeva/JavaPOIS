@@ -6,6 +6,7 @@
 package com.bsu.vasilyeva_n.lab10.entity;
 
 import java.io.IOException;
+import java.util.Objects;
 
 
 
@@ -55,6 +56,31 @@ public class PlatformaFreightCoach extends FreightCoaches {
          
          return msg.toString();
      }
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 67 * hash + Objects.hashCode(this.type);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final PlatformaFreightCoach other = (PlatformaFreightCoach) obj;
+        if (!Objects.equals(this.type, other.type)) {
+            return false;
+        }
+        return true;
+    }
     
     
 }

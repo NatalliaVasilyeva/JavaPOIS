@@ -6,6 +6,7 @@
 package com.bsu.vasilyeva_n.lab10.entity;
 
 import java.io.IOException;
+import java.util.Objects;
 
 
 
@@ -80,5 +81,47 @@ public abstract class PassengerCoaches extends Coaches {
      public abstract String connectItems();
      public abstract String disconnectItems();
 
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 89 * hash + this.numberOfPassenger;
+        hash = 89 * hash + this.weightOfLaggage;
+        hash = 89 * hash + this.capacityOfPassengerInCoach;
+        hash = 89 * hash + this.capacityOfLaggageInCoach;
+        hash = 89 * hash + Objects.hashCode(this.placeType);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final PassengerCoaches other = (PassengerCoaches) obj;
+        if (this.numberOfPassenger != other.numberOfPassenger) {
+            return false;
+        }
+        if (this.weightOfLaggage != other.weightOfLaggage) {
+            return false;
+        }
+        if (this.capacityOfPassengerInCoach != other.capacityOfPassengerInCoach) {
+            return false;
+        }
+        if (this.capacityOfLaggageInCoach != other.capacityOfLaggageInCoach) {
+            return false;
+        }
+        if (this.placeType != other.placeType) {
+            return false;
+        }
+        return true;
+    }
+
+     
   
 }

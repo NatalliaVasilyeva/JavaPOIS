@@ -5,6 +5,7 @@
  */
 package com.bsu.vasilyeva_n.lab10.entity;
 
+import com.bsu.vasilyeva_n.lab10.exceptions.ItemsOfTransportExceptions;
 import java.io.IOException;
 
 
@@ -16,7 +17,7 @@ public abstract class Coaches extends ItemsOfTransport {
     
     private int length;
 
-    public Coaches(int id) throws IOException {
+    public Coaches(int id) throws ItemsOfTransportExceptions {
         super(id);
       }
     
@@ -32,4 +33,30 @@ public abstract class Coaches extends ItemsOfTransport {
     @Override
      public abstract String connectItems();
      public abstract String disconnectItems();
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 67 * hash + this.length;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Coaches other = (Coaches) obj;
+        if (this.length != other.length) {
+            return false;
+        }
+        return true;
+    }
+     
 }

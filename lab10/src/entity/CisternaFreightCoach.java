@@ -6,6 +6,7 @@
 package com.bsu.vasilyeva_n.lab10.entity;
 
 import java.io.IOException;
+import java.util.Objects;
 
 
 /**
@@ -63,6 +64,35 @@ public class CisternaFreightCoach extends FreightCoaches {
          
          return msg.toString();
      }
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 97 * hash + Objects.hashCode(this.tentConstraction);
+        hash = 97 * hash + this.heigthOfFreightCoaches;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final CisternaFreightCoach other = (CisternaFreightCoach) obj;
+        if (this.heigthOfFreightCoaches != other.heigthOfFreightCoaches) {
+            return false;
+        }
+        if (!Objects.equals(this.tentConstraction, other.tentConstraction)) {
+            return false;
+        }
+        return true;
+    }
     
     
 }

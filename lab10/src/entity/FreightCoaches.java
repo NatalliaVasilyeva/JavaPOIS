@@ -67,6 +67,47 @@ public abstract class FreightCoaches extends Coaches {
       @Override
      public abstract String connectItems();
      public abstract String disconnectItems();
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 43 * hash + this.volumeOfLaggageInFreightCoaches;
+        hash = 43 * hash + this.maxVolumeOfLaggageInFreightCoaches;
+        hash = 43 * hash + this.weightOfLaggageInFreightCoaches;
+        hash = 43 * hash + this.maxWeightOfLaggageInFreightCoaches;
+        hash = 43 * hash + this.widthsOfFreightCoaches;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final FreightCoaches other = (FreightCoaches) obj;
+        if (this.volumeOfLaggageInFreightCoaches != other.volumeOfLaggageInFreightCoaches) {
+            return false;
+        }
+        if (this.maxVolumeOfLaggageInFreightCoaches != other.maxVolumeOfLaggageInFreightCoaches) {
+            return false;
+        }
+        if (this.weightOfLaggageInFreightCoaches != other.weightOfLaggageInFreightCoaches) {
+            return false;
+        }
+        if (this.maxWeightOfLaggageInFreightCoaches != other.maxWeightOfLaggageInFreightCoaches) {
+            return false;
+        }
+        if (this.widthsOfFreightCoaches != other.widthsOfFreightCoaches) {
+            return false;
+        }
+        return true;
+    }
     
     
 }

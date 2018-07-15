@@ -5,6 +5,8 @@
  */
 package com.bsu.vasilyeva_n.lab10.entity;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 /**
  *
@@ -15,10 +17,13 @@ public class Train  {
     private String numberOfTrain;
     private String routeOfTrain;
     
-    ArrayList<ItemsOfTransport> coaches= new ArrayList<ItemsOfTransport>();
+    public static final int DEFAULT_CAPACITY = 10;
     
+    public List<ItemsOfTransport> coaches;
+             
     
     public Train(String numberOfTrain, String routeOfTrain) {
+        coaches = new ArrayList<>(DEFAULT_CAPACITY);
         this.numberOfTrain = numberOfTrain;
         this.routeOfTrain = routeOfTrain;
     }
@@ -40,12 +45,12 @@ public class Train  {
     }
 
         
-    public ArrayList<ItemsOfTransport> getCoaches(){
-        return coaches;
+    public ItemsOfTransport getCoach(int i){
+        return coaches.get(i);
     }
     
     public void setCoaches(ArrayList<ItemsOfTransport> coashes){
-    this.coaches=coaches;
+        this.coaches=coaches;
     }
     
     
@@ -55,9 +60,18 @@ public class Train  {
     };
 
 
+    public List<ItemsOfTransport> getCoaches(){
+        return coaches;
+    }
    
+    public Train() {
+        coaches = new ArrayList<>(DEFAULT_CAPACITY);
+    }
     
     
+    public int size() {
+        return coaches.size();
+    }
     
      @Override
      public String toString() {
@@ -69,6 +83,39 @@ public class Train  {
          
          return msg.toString();
      }
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 19 * hash + Objects.hashCode(this.numberOfTrain);
+        hash = 19 * hash + Objects.hashCode(this.routeOfTrain);
+        hash = 19 * hash + Objects.hashCode(this.coaches);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Train other = (Train) obj;
+        if (!Objects.equals(this.numberOfTrain, other.numberOfTrain)) {
+            return false;
+        }
+        if (!Objects.equals(this.routeOfTrain, other.routeOfTrain)) {
+            return false;
+        }
+        if (!Objects.equals(this.coaches, other.coaches)) {
+            return false;
+        }
+        return true;
+    }
     
     
 }

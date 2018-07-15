@@ -28,11 +28,11 @@ public class PlackartCoach extends PassengerCoaches {
         setWeightOfLaggage(weightOfLaggage);
         }
 
-    public int getCountOfSleepingPlace() {
+    public int getQuantityOfSleepingPlace() {
         return countOfSleepingPlace;
     }
 
-    public void setCountOfSleepingPlace(int countOfSleepingPlace) {
+    public void setQuantityOfSleepingPlace(int countOfSleepingPlace) {
         this.countOfSleepingPlace = countOfSleepingPlace;
     }
     
@@ -56,5 +56,31 @@ public class PlackartCoach extends PassengerCoaches {
          
          return msg.toString();
      }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 59 * hash + this.countOfSleepingPlace;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final PlackartCoach other = (PlackartCoach) obj;
+        if (this.countOfSleepingPlace != other.countOfSleepingPlace) {
+            return false;
+        }
+        return true;
+    }
     
+     
 }

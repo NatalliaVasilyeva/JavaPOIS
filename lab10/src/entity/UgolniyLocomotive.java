@@ -48,6 +48,31 @@ public class UgolniyLocomotive extends Locomotive {
          
          return msg.toString();
      }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 79 * hash + this.volumeOfCoal;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final UgolniyLocomotive other = (UgolniyLocomotive) obj;
+        if (this.volumeOfCoal != other.volumeOfCoal) {
+            return false;
+        }
+        return true;
+    }
    
      
     

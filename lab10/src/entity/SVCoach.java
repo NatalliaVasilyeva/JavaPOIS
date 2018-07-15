@@ -64,6 +64,36 @@ public class SVCoach extends PassengerCoaches {
          
          return msg.toString();
      }
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 97 * hash + this.countOfKupe;
+        hash = 97 * hash + this.numberOfSleepingplace;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final SVCoach other = (SVCoach) obj;
+        if (this.countOfKupe != other.countOfKupe) {
+            return false;
+        }
+        if (this.numberOfSleepingplace != other.numberOfSleepingplace) {
+            return false;
+        }
+        return true;
+    }
     
+     
 }
     

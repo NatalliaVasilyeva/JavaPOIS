@@ -46,6 +46,31 @@ public class ElectricLocomotive extends Locomotive {
          
          return msg.toString();
      }
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 79 * hash + this.batteryCapacity;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final ElectricLocomotive other = (ElectricLocomotive) obj;
+        if (this.batteryCapacity != other.batteryCapacity) {
+            return false;
+        }
+        return true;
+    }
    
      
     

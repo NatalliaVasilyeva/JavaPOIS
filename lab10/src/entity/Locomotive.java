@@ -33,5 +33,31 @@ public abstract class Locomotive extends ItemsOfTransport {
     @Override
      public abstract String connectItems();
      public abstract String disconnectItems();
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 37 * hash + this.power;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Locomotive other = (Locomotive) obj;
+        if (this.power != other.power) {
+            return false;
+        }
+        return true;
+    }
     
+     
 }

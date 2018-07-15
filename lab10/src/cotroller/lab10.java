@@ -13,11 +13,17 @@ import com.bsu.vasilyeva_n.lab10.utilites.CreatorLocomotives;
 import com.bsu.vasilyeva_n.lab10.utilites.CreatorPassengerCoaches;
 import com.bsu.vasilyeva_n.lab10.entity.PassengerCoaches.TypeOfPlace;
 import com.bsu.vasilyeva_n.lab10.entity.PlackartCoach;
+import com.bsu.vasilyeva_n.lab10.logic.TrainCounter;
+import com.bsu.vasilyeva_n.lab10.logic.TrainComparator;
+import com.bsu.vasilyeva_n.lab10.logic.TrainSearcher;
+import com.bsu.vasilyeva_n.lab10.logic.TrainSorter;
+import java.util.ArrayList;
 
 
 
 import java.io.IOException;
 import java.util.Collections;
+import org.junit.runner.manipulation.Sorter;
 
 /**
  *
@@ -34,9 +40,9 @@ public class lab10 {
        ItemsOfTransport plackart3 = CreatorPassengerCoaches.createCoach("PLACKART", 4, TypeOfPlace.ECONOM, 15, "1580m", 53, 1200, 45, 850);
 
        ((ElectricLocomotive) locomotive).setBatteryCapacity(150000);
-       ((PlackartCoach) plackart1).setCountOfSleepingPlace(35);
-       ((PlackartCoach) plackart2).setCountOfSleepingPlace(35);
-       ((PlackartCoach) plackart3).setCountOfSleepingPlace(35);
+       ((PlackartCoach) plackart1).setQuantityOfSleepingPlace(35);
+       ((PlackartCoach) plackart2).setQuantityOfSleepingPlace(35);
+       ((PlackartCoach) plackart3).setQuantityOfSleepingPlace(35);
        
        passengerTrain.add(locomotive);
        passengerTrain.add(plackart1);
@@ -44,8 +50,14 @@ public class lab10 {
        passengerTrain.add(plackart3);
        
        System.out.println(passengerTrain);
-          
-  
+       
+      TrainSorter.sortByNumber(passengerTrain, TrainComparator.numberComparator);
+       TrainSorter.sortByPassenger(passengerTrain, TrainComparator.passengerComparator);    
+       System.out.println(TrainSearcher.searchCoachWithInsertNumbersOfPlace(passengerTrain, 33));
+       
+      System.out.println(TrainCounter.countTrainPassengers(passengerTrain));
+       System.out.println(passengerTrain);
         
+            
 }
 }
